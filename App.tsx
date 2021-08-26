@@ -4,12 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import Counter from './src/components/Counter/';
 import Ingredient from './src/components/Ingredient/Ingredient';
 import DoughCalculator from './src/screens/DoughCalculator';
+import MyRecipes from './src/screens/MyRecipes';
 
 export default function App() {
   const [value, setValue] = useState(0)
   return (
     <View style={styles.container}>
-      <DoughCalculator />
+      <MyRecipes />
     </View>
   );
 }
