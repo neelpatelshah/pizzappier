@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Counter from './src/components/Counter/';
+import Ingredient from './src/components/Ingredient/Ingredient';
+import DoughCalculator from './src/screens/DoughCalculator';
 
 export default function App() {
+  const [value, setValue] = useState(0)
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <DoughCalculator />
     </View>
   );
 }
